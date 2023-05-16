@@ -57,9 +57,15 @@ class HomeView extends StatelessWidget {
             return SingleChildScrollView(
               child: Column(
                 children: <Widget>[
-                  Image.asset(
-                    'assets/app_logo.png',
-                    height: imageHeight,
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      left: 16,
+                      right: 16,
+                    ),
+                    child: Image.asset(
+                      'assets/app_logo.png',
+                      height: imageHeight,
+                    ),
                   ),
                   if (items.isNotEmpty) ...[
                     GridView.builder(
