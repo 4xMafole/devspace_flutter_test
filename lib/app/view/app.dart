@@ -12,6 +12,7 @@ class App extends StatelessWidget {
     return BlocProvider<HomeBloc>(
       create: (context) => HomeBloc(repository: DataRepository()),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           appBarTheme:
               const AppBarTheme(color: Color.fromARGB(255, 19, 102, 255)),

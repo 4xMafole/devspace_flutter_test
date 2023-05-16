@@ -12,6 +12,7 @@ class HomeView extends StatelessWidget {
         if (state is ItemErrorState) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
+              backgroundColor: Colors.red.shade600,
               content: Text(state.message),
             ),
           );
