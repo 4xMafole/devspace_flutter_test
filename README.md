@@ -17,9 +17,9 @@ A devspace flutter test app
 
 ### Screenshots
 
-![1](https://github.com/4xMafole/devspace_flutter_test/assets/19847904/a95d0bb7-9d1b-497a-acc9-28b83ab42d2f)
-![2](https://github.com/4xMafole/devspace_flutter_test/assets/19847904/ffdad5dc-df85-4601-b6f8-3c10641c2511)
-![3](https://github.com/4xMafole/devspace_flutter_test/assets/19847904/639af37d-a276-4df3-8937-b5142639c3ae)
+<img src="https://github.com/4xMafole/devspace_flutter_test/assets/19847904/a95d0bb7-9d1b-497a-acc9-28b83ab42d2f" width="200" height="400">
+<img src="https://github.com/4xMafole/devspace_flutter_test/assets/19847904/ffdad5dc-df85-4601-b6f8-3c10641c2511" width="200" height="400">
+<image src="https://github.com/4xMafole/devspace_flutter_test/assets/19847904/639af37d-a276-4df3-8937-b5142639c3ae" width="200" height="400">
 
 
 ## Getting Started 🚀
