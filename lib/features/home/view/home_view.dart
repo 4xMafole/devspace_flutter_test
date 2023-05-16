@@ -17,6 +17,29 @@ class HomeView extends StatelessWidget {
             ),
           );
         }
+
+        if (state is ItemAddLoadingState || state is ItemRemoveLoadingState) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              backgroundColor: Colors.blue.shade600,
+              content: Row(
+                children: const [
+                  SizedBox(
+                    height: 18,
+                    width: 18,
+                    child: CircularProgressIndicator(
+                      color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 12,
+                  ),
+                  Text('loading'),
+                ],
+              ),
+            ),
+          );
+        }
       },
       builder: (context, state) {
         final items = (state is ItemAddState || state is ItemRemoveState)
@@ -43,11 +66,7 @@ class HomeView extends StatelessWidget {
                       shrinkWrap: true,
                       padding: const EdgeInsets.all(8),
                       physics: const NeverScrollableScrollPhysics(),
-                      itemCount: items.length +
-                          (state is ItemAddLoadingState ||
-                                  state is ItemRemoveLoadingState
-                              ? 1
-                              : 0),
+                      itemCount: items.length,
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,

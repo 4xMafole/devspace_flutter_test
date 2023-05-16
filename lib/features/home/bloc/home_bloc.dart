@@ -22,6 +22,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     AddItemEvent event,
     Emitter<HomeState> emit,
   ) async {
+    emit(ItemAddLoadingState());
     try {
       final newData = await _repository.fetchItem();
       items.add(newData);
